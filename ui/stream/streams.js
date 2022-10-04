@@ -271,7 +271,7 @@ export class Streams {
           return;
         }
 
-        delay = new Date().getTime() - this.lastEchoTime.getTime();
+        delay = 1;
 
         if (delay < 0) {
           delay = 0;
