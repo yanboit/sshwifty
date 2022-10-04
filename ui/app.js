@@ -283,7 +283,7 @@ function startApp(rootEl) {
 
           if (result.date) {
             let serverTime = result.date.getTime(),
-              clientTime = new Date().getTime(),
+              clientTime = result.date.getTime(),
               timeDiff = Math.abs(serverTime - clientTime);
 
             if (timeDiff > maxTimeDiff) {
